@@ -24,5 +24,5 @@ def send_data(email, city, name_of_receiver):
         smtp.sendmail(
             from_addr=MY_EMAIL,
             to_addrs=TO_EMAIL,
-            msg=f"Subject: Hi, {name_of_receiver}, interested in our Services\n\nTemperature = {temperature}. <p>&#128512;</p>"
+            msg=f"Subject: Hi, {name_of_receiver}, interested in our Services\n\nTemperature = {temperature}."
         )
