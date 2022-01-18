@@ -1,11 +1,12 @@
 import smtplib
 import requests
+import email_details
 
 
 def send_data(email, city, name_of_receiver):
-    MY_EMAIL = 'smtptesting404@gmail.com'
-    MY_PASSWORD = 'smtp@404'
-    API_KEY = 'e9e142930405697e087dedc3c33b0ff2'
+    MY_EMAIL = email_details.email
+    MY_PASSWORD = email_details.pass
+    API_KEY = email_details.api_key
     API_ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather'
     TO_EMAIL = email
     City_Name = city
